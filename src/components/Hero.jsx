@@ -2,7 +2,7 @@ import React from 'react'
 import {styles} from "../styles"
 import {ComputersCanvas} from "./canvas"
 import { motion } from 'framer-motion'
-
+import  ChatApp  from "./ChatLike"
 const Hero = () => {
   return (
     <section className='relative w-full h-screen mx-auto'>
@@ -14,8 +14,8 @@ const Hero = () => {
           </div>
         </div>
         <div>
-        <h1 className={`${styles.heroHeadText} text-white-100 mt-2`}>Hi, I'm <span className='text-[#915eff]'>Aakash</span> </h1>
-          <p>I develop 3D user <br className='sm:hidden block'/> Interfaces and web applications</p>
+        <h1 className={`${styles.heroHeadText} text-white-100 mt-2`}><ChatApp message={`Hi, I'm`} speed={2000}/> <span className='text-[#915eff]'><ChatApp message="Aakash" speed={2000} ani/></span> </h1>
+          <p><ChatApp message="I develop 3D user" speed={2000}/> <br className='sm:hidden block'/> Interfaces and web applications</p>
         </div>
       </div>
       <ComputersCanvas/>

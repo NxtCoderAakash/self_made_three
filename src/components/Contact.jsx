@@ -8,6 +8,13 @@ import { SectionWrapper } from '../hoc'
 import { slideIn } from '../utils/motion'
 import { motion } from 'framer-motion'
 
+const serviceID="service_bm1qz8q"
+const templateID="template_w6xlzma"
+const publicKey="Q06HJBdAmd_Heysry"
+//template_w6xlzma
+//service_bm1qz8q
+//Q06HJBdAmd_Heysry
+
 const Contact = () => {
   const formRef = useRef()
   const [form,setForm]=useState({name:"",email:"",message:""})
@@ -15,10 +22,37 @@ const Contact = () => {
   
 
   const handleChange=(e)=>{
-
+    const {name,value}=e.target
+    setForm({...form,[name]:value})
   }
 
   const handleSubmit=(e)=>{
+   e.preventDefault()
+    setLoading(true)
+
+    emailjs.send(serviceID,templateID,{
+      from_name:form.name,
+      to_name:"Aakash",
+      from_email:form.email,
+      to_email:"aakash.connectweb@gmail.com",
+      message:form.message
+    },
+    publicKey
+    ).then(()=>{
+      setLoading(false)
+      alert("Thankyou,I will get back to you as soon as possible")
+      setForm(
+        {name:"",
+        email:"",
+        message:""
+    })
+    },(error)=>{
+      setLoading(false)
+      console.log(error)
+      alert("Something went wrong")
+    }
+    )
+
 
   }
 
@@ -55,7 +89,7 @@ const Contact = () => {
               <span className='text-white font-medium mb-4'>Your Email</span>
               <input 
               type="text" 
-              name="name" 
+              name="email" 
               value={form.email}
               placeholder="What's your email"
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
@@ -68,7 +102,7 @@ const Contact = () => {
               <textarea 
               rows="7"
               type="text" 
-              name="name" 
+              name="message" 
               value={form.message}
               placeholder="What do you want to say"
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
