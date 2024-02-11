@@ -1,0 +1,15 @@
+@keyframes fade {
+    
+        50% {
+          opacity: 0;
+        }
+      
+  }
+
+.blink-cursor{
+    display: inline-block;
+    animation: fade 0.8s ease-in-out 1s infinite;
+}
+.no-blink{
+    display: none;
+}

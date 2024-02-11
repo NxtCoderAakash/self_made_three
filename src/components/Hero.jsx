@@ -1,9 +1,15 @@
-import React from 'react'
+import React,{useState} from 'react'
 import {styles} from "../styles"
 import {ComputersCanvas} from "./canvas"
 import { motion } from 'framer-motion'
 import  ChatApp  from "./ChatLike"
 const Hero = () => {
+  const [stepper,setStepper]=useState(1)
+
+  const handleStepper=(value)=>{
+    setStepper(value)
+  }
+
   return (
     <section className='relative w-full h-screen mx-auto'>
       <div className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7-xl mx-auto flex flex-row items-start gap-5`}>
@@ -14,8 +20,8 @@ const Hero = () => {
           </div>
         </div>
         <div>
-        <h1 className={`${styles.heroHeadText} text-white-100 mt-2`}><ChatApp message={`Hi, I'm`} speed={2000}/> <span className='text-[#915eff]'><ChatApp message="Aakash" speed={2000} ani/></span> </h1>
-          <p><ChatApp message="I develop 3D user" speed={2000}/> <br className='sm:hidden block'/> Interfaces and web applications</p>
+        <h1 className={`${styles.heroHeadText} text-white-100 mt-2`}><ChatApp step={1} handleStepper={handleStepper} message={`Hi, I'm`} speed={2000}/> {stepper>=2 && <span className='text-[#915eff]'><ChatApp step={2} message="Aakash" speed={2000} ani handleStepper={handleStepper}/></span>} </h1>
+          <p>{stepper>=3 && <ChatApp step={3} message="I develop 3D user" speed={2000} handleStepper={handleStepper}/> }<br className='sm:hidden block'/>{stepper>=4 && <ChatApp step={4} message="Interfaces and web applications" speed={2000} handleStepper={handleStepper}/> }</p>
         </div>
       </div>
       <ComputersCanvas/>
