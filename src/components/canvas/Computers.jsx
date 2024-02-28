@@ -28,7 +28,6 @@ const Computers = ({isMobile}) => {
         }
         return prevRotationY + 0.05 }
         );
-      console.log("inside")
 
       // Update the last time reference
       lastTimeRef.current = currentTime;
@@ -36,7 +35,7 @@ const Computers = ({isMobile}) => {
     }
   });
   return (
-    <Fragment className="">
+    <Fragment>
     <mesh ref={computerRef}>
       <hemisphereLight intensity={0.15} groundColor="black" />
       <pointLight intensity={1}/>

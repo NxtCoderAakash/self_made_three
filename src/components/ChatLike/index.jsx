@@ -44,7 +44,7 @@ const ChatApp = ({message,speed,ani,handleStepper,step}) => {
 
   return (
     <div className={`${ani?"HW_pulse":""}`}>
-      <p className={`typing-text`}><TypingText content={messageContent} typingSpeed={typingSpeed} handleStepper={handleStepper} step={step}/> </p>
+      <div className={`typing-text`}><TypingText content={messageContent} typingSpeed={typingSpeed} handleStepper={handleStepper} step={step}/> </div>
     </div>
   );
 };

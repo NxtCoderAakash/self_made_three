@@ -23,6 +23,9 @@ import {
     jobit,
     tripguide,
     threejs,
+    credrIcon,
+    nxtWave
+
   } from "../assets";
   
   export const navLinks = [
@@ -35,8 +38,25 @@ import {
       title: "Work",
     },
     {
+      id: "skills",
+      title: "Skills",
+    },
+    {
+      id: "projects",
+      title: "Projects",
+    },
+    {
+      id: "testimonials",
+      title: "Testimonials",
+    },
+    {
       id: "contact",
       title: "Contact",
+    },
+    {
+      id: "resume",
+      title: "MyResume",
+      link:"https://drive.google.com/file/d/1BZ9dRmqsblHUH5R9wPm2x_3GJfTJL1Qz/view"
     },
   ];
   
@@ -50,11 +70,11 @@ import {
       icon: mobile,
     },
     {
-      title: "",
+      title: "4+ Repositories  150+ Features",
       icon: backend,
     },
     {
-      title: "Content Creator",
+      title: "1800+ Hours 20000+ Lines",
       icon: creator,
     },
   ];
@@ -92,14 +112,14 @@ import {
       name: "Node JS",
       icon: nodejs,
     },
-    {
-      name: "MongoDB",
-      icon: mongodb,
-    },
-    {
-      name: "Three JS",
-      icon: threejs,
-    },
+    // {
+    //   name: "MongoDB",
+    //   icon: mongodb,
+    // },
+    // {
+    //   name: "Three JS",
+    //   icon: threejs,
+    // },
     {
       name: "git",
       icon: git,
@@ -108,91 +128,91 @@ import {
       name: "figma",
       icon: figma,
     },
-    {
-      name: "docker",
-      icon: docker,
-    },
+    // {
+    //   name: "docker",
+    //   icon: docker,
+    // },
   ];
   
   const experiences = [
     {
       title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
+      company_name: "Credr, Incredible Incredible Technologies Pvt. Ltd.",
+      icon: credrIcon,
       iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      date: "April 2023 - March 2024 (Ongoing)",
       points: [
         "Developing and maintaining web applications using React.js and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
+        "Highlights: 1+ Public Website, 3+ Internal Website, 4+ Code Repositories ,20+ Team Members, 150+ minor features,160 + Api Integration, 200+ Bugs Fixes, 1200+ hours of Live Coding and 20000+ Lines of Code.",
         "Participating in code reviews and providing constructive feedback to other developers.",
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
+      title: "Full Stack Apprentice",
+      company_name: "Nxt Wave Technologies Pvt. Ltd.",
+      icon: nxtWave,
       iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      date: "August 2022 - March 2023 ",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Traversed and Learnt IR 4.0 Technologies with MERN Stack as sepcialization",
+        "Completed Assigments timely and designed 30+ mini-projects to hone my skills for Frontend Development",
+        "Implementing responsive design to learn ReactJS, Redux, Javascript, CSS, HTML, SQLite and NodeJS",
+        "Participating in code reviews and inculcating constructive feedback from my mentors.",
       ],
     },
-    {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
+    // {
+    //   title: "Web Developer",
+    //   company_name: "Shopify",
+    //   icon: shopify,
+    //   iconBg: "#383E56",
+    //   date: "Jan 2022 - Jan 2023",
+    //   points: [
+    //     "Developing and maintaining web applications using React.js and other related technologies.",
+    //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+    //     "Implementing responsive design and ensuring cross-browser compatibility.",
+    //     "Participating in code reviews and providing constructive feedback to other developers.",
+    //   ],
+    // },
+    // {
+    //   title: "Full stack Developer",
+    //   company_name: "Meta",
+    //   icon: meta,
+    //   iconBg: "#E6DEDD",
+    //   date: "Jan 2023 - Present",
+    //   points: [
+    //     "Developing and maintaining web applications using React.js and other related technologies.",
+    //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+    //     "Implementing responsive design and ensuring cross-browser compatibility.",
+    //     "Participating in code reviews and providing constructive feedback to other developers.",
+    //   ],
+    // },
   ];
   
   const testimonials = [
     {
       testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
+        "His meticulous attention to detail and dedication to project ownership are truly admirable. Aakash consistently delivers top-notch code and creative solutions to challenges.",
+      name: "Anoop Munshi",
+      designation: "AVP",
+      company: "Credr",
+      image: "https://i.postimg.cc/yNztQBRS/anoop-munshi-logo.jpg",
     },
     {
       testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
+        "His proficiency in ReactJS and typescript is truly commendable, evident in the successful completion of many of our projects. Aakash’s dedication and collaborative spirit make them an invaluable team member.",
+      name: "Bhuvanachandra Kuppili",
+      designation: "SDE-3, SSE",
+      company: "Credr",
+      image: "https://i.postimg.cc/fTGryZBg/Bhuvana.jpg",
     },
     {
       testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
+        "Aakash's Proficiency and Dedication is commendable and his ownership of Work is truly recommendable.!",
+      name: "Praveen Malviya",
+      designation: "SSE",
+      company: "Credr",
+      image: "https://i.postimg.cc/fRMgm5Qx/praveen.jpg",
     },
   ];
   

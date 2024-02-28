@@ -21,7 +21,7 @@ const Hero = () => {
         </div>
         <div>
         <h1 className={`${styles.heroHeadText} text-white-100 mt-2`}><ChatApp step={1} handleStepper={handleStepper} message={`Hi, I'm`} speed={2000}/> {stepper>=2 && <span className='text-[#915eff]'><ChatApp step={2} message="Aakash" speed={2000} ani handleStepper={handleStepper}/></span>} </h1>
-          <p>{stepper>=3 && <ChatApp step={3} message="I develop 3D user" speed={2000} handleStepper={handleStepper}/> }<br className='sm:hidden block'/>{stepper>=4 && <ChatApp step={4} message="Interfaces and web applications" speed={2000} handleStepper={handleStepper}/> }</p>
+          <p>{stepper>=3 && <ChatApp step={3} message="I develop Responsive Web Application" speed={2000} handleStepper={handleStepper}/> }<br className='sm:hidden block'/>{stepper>=4 && <ChatApp step={4} message="and Valuable Dashboards" speed={2000} handleStepper={handleStepper}/> }</p>
         </div>
       </div>
       <ComputersCanvas/>
