@@ -9,20 +9,21 @@ import { fadeIn ,textVariant} from '../utils/motion'
 
 const ProjectCard=({index,name,description,tags,image,source_code_link})=>{
   return(
-    <motion.div variants={fadeIn("up","spring",index*0.5,0.75)}>
+    <motion.div variants={fadeIn("up","spring",index*0.5,0.75)} onClick={()=>{return source_code_link ?window.open(source_code_link,"_blank"):null}}>
        <Tilt 
        option={{max:10,scale:1,speed:450}}
-       className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full
-       rounded-2xl"
+       className="bg-tertiary rounded-2xl sm:w-[320px] w-full
+       rounded-2xl h-[469px] p-5 cursor-pointer"
        options={{
         max:45,
         scale:1,
         speed:450,
       }}
+
       
        >
         <div 
-        className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full">
+        className="bg-tertiary rounded-2xl w-full">
         <div className='relative w-full h-[230px]'>
           <img
           src={image}
@@ -30,7 +31,7 @@ const ProjectCard=({index,name,description,tags,image,source_code_link})=>{
           className='w-full h-full object-cover rounded-2xl'
           />
 
-          <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
+          {source_code_link && <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
               <div
               onClick={()=>window.open(source_code_link,"_blank")}
               className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
@@ -42,7 +43,7 @@ const ProjectCard=({index,name,description,tags,image,source_code_link})=>{
                 />
 
               </div>
-          </div>
+          </div>}
 
 
 

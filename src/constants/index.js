@@ -24,7 +24,11 @@ import {
     tripguide,
     threejs,
     credrIcon,
-    nxtWave
+    nxtWave,
+    credrAds,
+    jobby,
+    otherProjects
+
 
   } from "../assets";
   
@@ -218,37 +222,16 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Work Sample - Credr Ads Webpage",
       description:
         "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
       tags: [
         {
-          name: "react",
+          name: "React",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
-          color: "green-text-gradient",
-        },
-        {
-          name: "tailwind",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: carrent,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Job IT",
-      description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-      tags: [
-        {
-          name: "react",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "restapi",
+          name: "Redux",
           color: "green-text-gradient",
         },
         {
@@ -256,29 +239,50 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: credrAds,
+      source_code_link: "https://aakashprojects.netlify.app/project2",
     },
     {
-      name: "Trip Guide",
+      name: "Jobby App",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and Know more about those jobs.",
       tags: [
         {
-          name: "nextjs",
+          name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "scss",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "RestfulApi",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: jobby,
+      source_code_link: "https://aakashprojects.netlify.app/jobby",
+    },
+    {
+      name: "More Projects",
+      description:
+        "A website for details of my projects and Work samples",
+      tags: [
+        {
+          name: "React",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Javascript",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Redux",
+          color: "pink-text-gradient",
+        },
+      ],
+      image:otherProjects,
+      source_code_link: "https://aakashprojects.netlify.app/",
     },
   ];
   

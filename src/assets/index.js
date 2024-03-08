@@ -31,6 +31,9 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import credrIcon from "./company/Credr-icon.webp"
 import nxtWave from "./company/nxt-wave.png"
+import jobby from "./jobby_screenshot.png"
+import credrAds from "./CredrAds.png"
+import otherProjects from "./OtherProjects.png"
 
 export {
   logo,
@@ -62,5 +65,8 @@ export {
   jobit,
   tripguide,
   credrIcon,
-  nxtWave
+  nxtWave,
+  credrAds,
+  jobby,
+  otherProjects
 };
